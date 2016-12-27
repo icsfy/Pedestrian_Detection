@@ -34,7 +34,7 @@ $ ./SvmTrainUseHog
 ```shell
 $ ./GetHardExample
 ```
-### 第四步，将正负样本和HardExample一起重新进行训练
+## 第四步，将正负样本和HardExample一起重新进行训练
 将 HardExample 图片列表写入文件 `HardExample_FromINRIA_NegList.txt` ，
 修改 `dataset.h` 里面的参数，将 `HardExampleNO` 由 `0` 改为第三步中得到的图片数目，修改后通过 `make` 重新编译可执行文件，最后通过 `SvmTrainUseHog` 重新训练。
 ```shell
@@ -50,3 +50,5 @@ $ ./SvmTrainUseHog
 * `ImageDetect`可对图片进行检测
 * `VideoDetect`可对视频进行检测
 * `PeopleDetect`为OpenCV默认参数的行人检测程序
+
+## [More](https://github.com/icsfy/Pedestrian_Detection/MORE.md)
