@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-project( Pedestrians )
+project( Pedestrian_Detection )
 find_package( OpenCV REQUIRED )
 
 add_executable( CropImage crop_image.cpp )

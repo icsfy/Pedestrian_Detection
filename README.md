@@ -2,8 +2,8 @@
 > 运行环境为：Ubuntu 16.04 && OpenCV 2.4.13  
 > 代码参考自：http://blog.csdn.net/masibuaa/article/details/16105073  
 > INRIA Person数据库下载：
-【[相关说明](http://pascal.inrialpes.fr/data/human/)】
-【[直接下载](ftp://ftp.inrialpes.fr/pub/lear/douze/data/INRIAPerson.tar)（970M）】
+【[相关说明](http://pascal.inrialpes.fr/data/human/)】  
+>【直接下载地址（970M）】ftp://ftp.inrialpes.fr/pub/lear/douze/data/INRIAPerson.tar
 
 ## 开始前的准备工作
 开始前建立文件夹用于存储正负样本和HardExample，正样本图片直接复制INRIA中的正样本图片，负样本图片通过裁剪得到。
@@ -45,6 +45,8 @@ $ ./SvmTrainUseHog
 ## 至此训练完成。
 检测示例图片：  
 ![检测示例图片](https://github.com/icsfy/Pedestrian_Detection/raw/master/ImgProcessed.jpg)
-## 其它
-* ImageDetect对图片进行检测
-* VideoDetect对视频进行检测。
+## 其它说明
+* `SVM_HOG.xml`为最终训练好的SVM分类器
+* `ImageDetect`可对图片进行检测
+* `VideoDetect`可对视频进行检测
+* `PeopleDetect`为OpenCV默认参数的行人检测程序
