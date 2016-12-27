@@ -44,7 +44,7 @@ $ ./SvmTrainUseHog
 ```
 ## 至此训练完成。
 检测示例图片：  
-![检测示例图片](ImgProcessed.img)
+![检测示例图片](https://github.com/icsfy/Pedestrian_Detection/raw/master/ImgProcessed.jpg)
 ## 其它
 * ImageDetect对图片进行检测
 * VideoDetect对视频进行检测。
