@@ -51,4 +51,4 @@ $ ./SvmTrainUseHog
 * `VideoDetect`可对视频进行检测
 * `PeopleDetect`为OpenCV默认参数的行人检测程序
 
-## [More](https://github.com/icsfy/Pedestrian_Detection/MORE.md)
+## [More](https://github.com/icsfy/Pedestrian_Detection/blob/master/MORE.md)
