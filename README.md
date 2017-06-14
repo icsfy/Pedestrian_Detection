@@ -16,6 +16,16 @@ $ cp INRIAPerson/96X160H96/Train/pos/* dataset/pos/
 $ cmake .
 $ make
 ```
+> 也可以在命令行使用`g++`编译出可执行文件，例如
+```shell
+$ g++ -o CropImage crop_image.cpp $(pkg-config opencv --cflags --libs)
+$ g++ -o SvmTrainUseHog main.cpp $(pkg-config opencv --cflags --libs)
+$ g++ -o GetHardExample find_save_HardExample.cpp $(pkg-config opencv --cflags --libs)
+$ g++ -o ImageDetect image_detect.cpp $(pkg-config opencv --cflags --libs)
+$ g++ -o VideoDetect video_detect.cpp $(pkg-config opencv --cflags --libs)
+$ g++ -o PeopleDetect peopledetect.cpp $(pkg-config opencv --cflags --libs)
+```
+
 ## 第一步，裁剪出负样本图片
 INRIA中有1218张负样本图片，`CropImage`从每一张图片中随机裁剪出10张大小为64x128的图片，最终总共会得到12180张图片，存储在dataset/neg文件夹中。上面已经编译出了可执行文件，直接通过`CropImage`裁剪出负样本图片。
 ```shell
