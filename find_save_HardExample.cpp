@@ -136,5 +136,7 @@ int main(int argc, char** argv)
       //waitKey(0);
   }
 
+  cout<<"HardExampleCount: "<<HardExampleCount<<endl;
+
   return 0;
 }
